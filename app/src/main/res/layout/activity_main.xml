@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sidkrafts.speakjapanese.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:id="@+id/bg" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_eng_jp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/sj_button"
+        android:text="@string/btn1"
+        android:textColor="#fff"
+        android:fontFamily="@font/bebasneueregular"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_jp_eng"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_eng_jp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sj_button"
+        android:text="@string/btn2"
+        android:textColor="#fff"
+        android:fontFamily="@font/bebasneueregular"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/footer"
+        android:id="@+id/footer_logo"
+        android:layout_below="@+id/btn_jp_eng"
+        android:layout_marginTop="120dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/footer_logo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer1"
+            android:textColor="#fff"
+            android:fontFamily="@font/bebasneueregular"
+            android:id="@+id/footer_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer2"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="@font/bebasneuebold"
+            android:layout_toEndOf="@+id/footer_1"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
