@@ -31,7 +31,8 @@
         android:text="@string/btn1"
         android:textColor="#fff"
         android:fontFamily="@font/bebasneueregular"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:onClick="engJap"/>
 
     <Button
         android:id="@+id/btn_jp_eng"
@@ -44,7 +45,8 @@
         android:text="@string/btn2"
         android:textColor="#fff"
         android:fontFamily="@font/bebasneueregular"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:onClick="japEng" />
 
     <ImageView
         android:layout_width="match_parent"
